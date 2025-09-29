@@ -1,0 +1,115 @@
+:root {
+    --amber: #c0971d;
+    --white: #fff;
+    --borderbottom: #b08d00;
+
+
+}
+
+body {
+/* background: var(--white); */
+/* background: linear-gradient(177deg,rgba(0, 0, 0, 1) 0%, rgba(192, 151, 29, 1) 50%, rgba(176, 141, 0, 1) 100%); */
+background: #000000;
+/* background: linear-gradient(180deg,rgba(0, 0, 0, 1) 15%, rgba(192, 151, 29, 1) 50%, rgba(176, 141, 0, 1) 100%); */
+background-color: #faf3e6;
+width: 85%;
+margin: auto;
+
+}
+
+
+/* Typography */
+p {
+    font-family: 'Josefin Slab', sans-serif;
+}
+
+header div {
+    background-color: white;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/blank_Intertitle.png");
+  min-height: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 85%;
+  display: flex;      
+  flex-direction: column;       
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  padding: 20px;   
+  margin: 40px auto 0;
+  font-family: 'Fascinate Inline', sans-serif;      
+  border-radius: 15px;    
+  width: 100vh;
+  min-height: 50vh;
+}
+header div.hero-image {
+    padding-bottom: 20px;
+}
+
+header h1, h2 {
+  position: static;
+  transform: none;
+  color: white;
+}
+
+
+/* Custom fonts */
+@font-face {
+    font-family: 'Berolina';
+    src: url(font/Berolina.ttf);
+}
+@font-face {
+    font-family: 'Copper plate Bold';
+    src: url(font/CopperplateCC-Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Copper plate Heavy';
+    src: url(font/CopperplateCC-Bold.otf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'Indira_K';
+    src: url(font/Indira_K.ttf);
+}
+
+@font-face {
+    font-family: 'Scarbes';
+    src: url(font/Scarbes.otf);
+}
+
+@font-face {
+    font-family: 'Showtime';
+    src: url(font/Showtime-R9Ke.ttf);
+}
+@font-face {
+    font-family: 'VentroDemo';
+    src: url(font/VentroDemo-JpdXK.otf);
+}
+@font-face {
+    font-family: 'VictoriaCAT';
+    src: url(font/VictoriaCAT.ttf);
+}
+@font-face {
+    font-family: 'Fascinate Inline';
+    src: url(font/FascinateInline-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Sail";
+    src: url(font/Sail-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Oldenburg';
+    src: url(font/Oldenburg-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url(font/JosefinSlab-VariableFont_wght.ttf);
+}
