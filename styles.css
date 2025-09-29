@@ -144,10 +144,12 @@ header {
   /* text-align: center; */
   padding: 20px;   
   margin: 40px auto 0;
-  font-family: 'Fascinate Inline', sans-serif;      
+  font-family: 'Fascinate Inline', sans-serif; 
+  font-size: 1.3em;     
   border-radius: 15px;    
   width: 100vh;
   min-height: 50vh;
+  background-color: black;
 }
 header div.hero-image {
     padding-bottom: 20px;
@@ -160,3 +162,39 @@ header h1, h2 {
 }
 
 
+@media (max-width: 960px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    header {
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .summary {
+        margin-top: 20px;
+        width: 85%;
+    }
+
+    .preamble {
+        width: 85%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .explanation {
+        background-image: url(images/charliechap-transparent.png);
+        background-size: 200px 350px;
+        background-repeat: no-repeat;
+        background-position: 98% 100%;
+
+    }
+
+    .explanation p {
+        width: 70%;
+        margin-top: 20;
+    }
+}
