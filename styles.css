@@ -162,6 +162,192 @@ header h1, h2 {
 }
 
 
+.explanation {
+    min-height: 50vh;
+    background-image: url(images/charliechap-transparent.png);
+    background-repeat: no-repeat;
+    background-size: 250px 400px;
+    background-position: 85% 90%;
+    padding-bottom: 30px;
+}
+
+.explanation p {
+    width: 50%;
+    margin-top: 50px;
+    padding-left: 10vw;
+    
+}
+
+.explanation h3 {
+    text-align: center;
+}
+
+.participation {
+    background: url(images/cliparts/addmission-ticket.png);
+    background-repeat: no-repeat;
+    background-size: 450px 350px;
+    background-position: 80% 100%;
+    padding-bottom: 30px;
+}
+
+.participation h3 {
+    text-align: center;
+}
+
+.participation p {
+    width: 50%;
+}
+
+
+.requirements {
+    background-image: url(images/cliparts/clapperboard.png), url(images/cliparts/popcorn.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 7% auto, 9% auto;
+    background-position: center left, center right;
+}
+
+
+.requiretext {
+    column-count: 3;
+    column-gap: 2em;
+    line-height: 1.475;
+    width: 85%;
+    margin: auto;
+}
+
+.requiretext::after {
+    content: ' ';
+    /* display: block; */
+    min-height: 400px;
+    min-width: 400px;
+    background-image: url(images/cliparts/popcorn.png,), url(images/cliparts/clapperboard.png), url(images/cliparts/drink.png);
+}
+
+.requiretext:nth-child(3)::before {
+    display: block;
+    height: 400px;
+}
+
+.design-selection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.design-selection ul {
+    list-style-type: none;
+    
+}
+
+
+
+h3 {
+    text-align: center;
+}
+
+.design-archives {
+    position: relative;
+}
+
+.design-selection ul::before {
+    /* content: url(images/cliparts/nowshowing.png);
+    width: 5%;
+    display: block; */
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    background-image: url(images/cliparts/billboard-star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 40px;
+    /* padding-top: ; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+}
+nav ul {
+    width: 30%;
+    margin: auto;
+}
+
+nav li {
+    margin-top: 1rem;
+}
+nav a {
+    text-decoration: none;
+}
+
+.design-name {
+    float: left;
+    font-family: 'Indira_K', sans-serif;
+    font-size: 1.15rem;
+    color: rgb(102, 17, 17);
+
+}
+
+.designer-name {
+    float: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(102, 17, 17);
+}
+
+
+.next, .viewall {
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Indira_K', sans-serif;
+    text-decoration: none;
+}
+
+.next a {
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(102, 17, 17);
+
+}
+
+.viewall a {
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(102, 17, 17);
+}
+
+.viewall a:hover {
+    color: #c0971d;
+}
+.next a:hover {
+    color: #c0971d;
+}
+
+.design-archives::after {
+    /* background-image: url(images/cliparts/film.png); */
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 11rem;
+    background-image: url(images/cliparts/megaphone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    padding: 0 40px;
+    
+}
+
+.zen-resources ul {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 @media (max-width: 960px) {
     .intro {
         display: flex;
@@ -189,12 +375,75 @@ header h1, h2 {
         background-image: url(images/charliechap-transparent.png);
         background-size: 200px 350px;
         background-repeat: no-repeat;
-        background-position: 98% 100%;
+        background-position: 98% 70%;
+        width: auto;
 
+    }
+
+    nav ul {
+        width: 56%;
+        margin: auto;
+    }
+
+    .requiretext {
+        column-count: 1;
+    }
+
+    .requirements {
+    background-image: url(images/cliparts/clapperboard.png), url(images/cliparts/popcorn.png), url(images/cliparts/camera.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 7% auto, 9% auto;
+    background-position: center left, center right, bottom right;
     }
 
     .explanation p {
         width: 70%;
-        margin-top: 20;
+        margin-top: 40px;
+        padding-left: 0px;
+        text-align: justify;
     }
-}
+
+    .explanation h3 {
+        text-align: center;
+    }
+
+    h3 {text-align: center;}
+
+
+    .participation p {
+        width: 100%;
+        padding-bottom: 50px;
+
+    }
+    
+    .participation {
+        background-image: url(images/cliparts/addmission-ticket.png);
+        background-size: 49%;
+        background-position: 50% 100%;
+
+    }
+
+    /* div.participation::after {
+        content: url(images/cliparts/addmission-ticket.png);
+        width: 50px;
+        max-width: 100%;
+        height: auto;
+        transition: width 0.3s ease-in-out;
+    } */
+    
+    .participation {
+        padding-bottom: 20vh;
+    }
+
+}    
+
+
+/* @media (max-width: 810px) {
+    .explanation p {
+        width: 55%;
+    }
+
+    .participation {
+        background-size: 50%;
+    }
+} */
